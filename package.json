@@ -1,7 +1,7 @@
 {
   "name": "infobot-sber-stt",
   "version": "1.0.0",
-  "description": "Node.JS library for Sber SpeechKit Speech-to-Text with streaming recognition",
+  "description": "Node.JS library for Sber SmartSpeech Speech-to-Text with streaming recognition",
   "main": "index.js",
   "directories": {
     "lib": "lib"
