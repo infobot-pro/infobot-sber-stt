@@ -21,7 +21,7 @@ const OPTIONS = {
 };
 
 class RecognitionSession {
-    constructor(accessToken, specification) {
+    constructor(accessToken, specification, rootCA) {
         var self = this;
         self.events = new EventEmitter;
         self.isEnd = false;
@@ -37,7 +37,7 @@ class RecognitionSession {
             });
 
         const proto = grpc.loadPackageDefinition(packageDefinition);
-        const service = new proto['smartspeech']['recognition']['v1']['SmartSpeech'](HOST, grpc.credentials.createSsl());
+        const service = new proto['smartspeech']['recognition']['v1']['SmartSpeech'](HOST, grpc.credentials.createSsl(rootCA));
 
         let metadata = new grpc.Metadata();
         metadata.set('authorization', 'Bearer ' + accessToken);
