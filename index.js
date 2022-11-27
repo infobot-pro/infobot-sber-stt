@@ -12,8 +12,8 @@ class InfobotSberSTT {
 
     constructor(clientId, clientSecret) {
         this._trustedCaFiles = [
-            './certs/russian_trusted_root_ca.cer',
-            './certs/russian_trusted_sub_ca.cer',
+            `${__dirname}/certs/russian_trusted_root_ca.cer`,
+            `${__dirname}/certs/russian_trusted_sub_ca.cer`,
         ];
 
         this._trustedCa = [];
