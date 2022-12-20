@@ -62,6 +62,7 @@ class RecognitionSession {
             sample_rate: specification.sample_rate_hertz,
             enable_partial_results: specification.partial_results,
             enable_profanity_filter: specification.profanity_filter,
+            model: specification.model
         });
         self._call.write({options: options});
     }
