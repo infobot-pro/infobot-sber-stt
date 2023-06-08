@@ -18,6 +18,9 @@ const OPTIONS = {
         enable_letters: false,
         hints_eou_timeout: {seconds: 0},
     },
+    SpeakerSeparationOptions: {
+        enable: true
+    }
 };
 
 class RecognitionSession {
